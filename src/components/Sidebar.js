@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
         {/* Twitter logo */}
-        <TwitterIcon />
+        <TwitterIcon className='sidebar__twitterIcon'/>
         <SidebarOption active text="Home" Icon={HomeIcon}/>
         <SidebarOption text="Explore" Icon={SearchIcon}/>
         <SidebarOption text="Notifications" Icon={NotificationsActiveIcon}/>
@@ -26,16 +26,6 @@ const Sidebar = () => {
         <SidebarOption text="Profile" Icon={PermIdentityIcon}/>
         <SidebarOption text="More" Icon={MoreHorizRoundedIcon}/>
 
-        {/* Home */}
-        {/* Explore */}
-        {/* notifications */}
-        {/* messages */}
-        {/* bookmarks */}
-        {/* lists */}
-        {/* profile */}
-        {/* more */}
-
-        {/* Tweet button */}
         <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
 
     </div>
