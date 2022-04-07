@@ -37,3 +37,9 @@
 .post__avatar{
     padding: 19px;
 }
+
+.post__headerSpecial{
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
