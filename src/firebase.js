@@ -1,5 +1,4 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore/lite';
+import firebase from "firebase";
 
 // Required for side-effects
 const firebaseConfig = {
@@ -12,8 +11,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-const db = getFirestore(app)
+const db = firebaseApp.firestore();
 
 export default db;
